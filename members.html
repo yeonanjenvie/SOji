@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The So4Js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: fixed; /* Make header sticky */
+            top: 0; /* Stick to top of viewport */
+            left: 0; /* Align to left */
+            width: 100%; /* Span the entire width */
+            background-color: transparent; /* Transparent background */
+            z-index: 2; /* Ensure it's on top of other content */
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            margin-left: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin-right: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Video Background Styles */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden; /* Hide any potential overflow */
+        }
+
+        .background video {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute; /* Important for proper layering */
+            top: 0;
+            left: 0;
+        }
+
+        /* Meet Our Team Section Styles */
+        .meet-our-team {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            padding-bottom: 0;
+            margin-top: 40px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .meet-our-team h2 {
+            font-size: 2.5em;
+            color: #f00;
+            margin-bottom: 20px;
+        }
+
+        .meet-our-team .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .meet-our-team .team-member {
+            width: 200px;
+            height: 250px;
+            background-color: #333;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .meet-our-team .team-member img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
+            margin-bottom: 10px;
+        }
+
+        .meet-our-team .team-member p {
+            font-size: 1em;
+            max-width: 180px;
+        }
+
+         /* Contact Us Section Styles */
+         .contact-us {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align content to the left */
+            padding: 40px;
+            position: relative;
+            z-index: 1;
+            text-align: left; /* Ensure text is left-aligned */
+            max-width: 800px; /* Limit the width for better readability */
+            margin: 0 auto; /* Center the section horizontally */
+        }
+
+        .contact-us h2 {
+            font-size: 2.5em;
+            color: #f00;
+            margin-bottom: 30px;
+            text-align: center; /* Center the heading */
+            width: 100%; /* Make sure the heading spans the full width */
+        }
+
+        .contact-us p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .contact-us .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Space between each contact info item */
+        }
+
+        .contact-us .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Space between icon and text */
+        }
+
+        .contact-us .contact-item i {
+            color: #f00; /* Icon color */
+            font-size: 1.5em; /* Icon size */
+            width: 20px; /* Consistent width for icons */
+            text-align: center; /* Center the icon in its container */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">The So4Js</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Video Background -->
+    <div class="background">
+        <video autoplay loop muted>
+            <source src="ass.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Meet Our Team Section -->
+    <section id="meet-our-team" class="meet-our-team">
+        <h2>MEET OUR TEAM</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="image1.jpg" alt="Brigitte Schwartz">
+                <p>Brigitte Schwartz</p>
+            </div>
+            <div class="team-member">
+                <img src="image2.jpg" alt="Alfredo Torres">
+                <p>Alfredo Torres</p>
+            </div>
+            <div class="team-member">
+                <img src="image3.jpg" alt="Adora Montminy">
+                <p>Adora Montminy</p>
+            </div>
+            <div class="team-member">
+                <img src="image4.jpg" alt="Brigitte Schwartz">
+                <p>Brigitte Schwartz</p>
+            </div>
+            <div class="team-member">
+                <img src="image5.jpg" alt="Brigitte Schwartz">
+                <p>Brigitte Schwartz</p>
+            </div>
+            <div class="team-member">
+                <img src="image6.jpg" alt="Brigitte Schwartz">
+                <p>Brigitte Schwartz</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us" class="contact-us">
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+123-456-7890</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-globe"></i>
+                <span>www.reallygreatsite.com</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>hello@reallygreatsite.com</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Anywhere ST., Any City, ST 12345</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
